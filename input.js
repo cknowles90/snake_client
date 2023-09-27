@@ -11,6 +11,12 @@ const handleUserInput = (data) => {     // relocated function to the top, still 
     connection.write("Move: down");
   } else if (data === 'd') {
     connection.write("Move: right");
+  } else if (data === 'e') {
+    connection.write("Say: HA! I stole that one! :D");
+  } else if (data === 'c') {
+    connection.write("Say: My how much you've grown...");
+  } else if (data === 'f') {
+    connection.write("Say: Rest In Piece");
   } else if (data === '\u0003') {
     console.log("Terminating the game...")
     process.exit();
