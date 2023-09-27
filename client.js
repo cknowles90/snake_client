@@ -9,7 +9,11 @@ const connect = function() {
   });
 
   conn.on("connect", () => {
-    console.log("I'm a sneeeek")
+    console.log("Successfully slithered into the game...");
+  });
+
+  conn.write("Name: ", () => {
+    console.log("Mum");
   });
   
   conn.on("data", () => {
