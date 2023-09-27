@@ -1,12 +1,13 @@
 // Pair programmed with: Stephen Fraser - @stephen-fraser - github.com/stephen-fraser
 
 const net = require("net");
+const { hostIP, PORT } = require("./constants");
 
 const connect = function() {
 
   const conn = net.createConnection({
-    port: 50541,
-    host: "165.227.47.243"
+    port: PORT,
+    host: hostIP,
   });
   
   conn.setEncoding("utf8"); // reordered things to read better and group like-minded code;
